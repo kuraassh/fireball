@@ -13,6 +13,7 @@ import ghstIcon from 'assets/images/animated/ghst-token.gif';
 
 import GotchiLevel from './GotchiLevel';
 import GotchiSkillPoints from './GotchiSkillPoints';
+import GotchiTraits from './GotchiTraits';
 import GotchiTraitsHighlight from './GotchiTraitsHighlight';
 import GotchiWearablesLine from './GotchiWearablesLine';
 import GotchiListing from './GotchiListing';
@@ -175,6 +176,15 @@ export default function Gotchi({ gotchi, title, narrowed, renderSvgByStats, rend
                     listing={gotchi.listings}
                     history={gotchi.historicalPrices}
                     key={`${gotchi.id}-listings`}
+                />
+            )
+        },
+        get traitsMapping() {
+            return (
+                <GotchiTraits
+                    gotchi={gotchi}
+                    collateral={collateral}
+                    key={`${gotchi.id}-traits`}
                 />
             )
         },

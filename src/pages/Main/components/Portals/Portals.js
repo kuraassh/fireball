@@ -31,7 +31,7 @@ export default function Portals() {
                 setOpenedPortals(response.data.statistic.portalsOpened);
                 setGotchiClaimed(response.data.statistic.aavegotchisClaimed);
                 setDataSpinner(false);
-            });
+            }).catch(e => console.log(e));
     };
 
     const getSealedPortals = () => {

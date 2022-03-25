@@ -126,6 +126,7 @@ export default function ClientGotchis() {
                                     'name',
                                     'mainTraits',
                                     'numericTraits',
+                                    'traitsMapping',
                                     'wearablesLine',
                                     'listing',
                                     'rewards'

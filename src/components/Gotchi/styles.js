@@ -378,6 +378,21 @@ const GotchiTraitsStyles = makeStyles( theme => ({
         fontSize: 10,
         marginLeft: 2
     },
+    traitsEffects: {
+        backgroundColor: alpha('#000', .1),
+        padding: 4,
+        marginTop: 8,
+        border: '1px solid cyan'
+    },
+    traitsEffect: {
+        position: 'relative',
+        padding: 4,
+        backgroundColor: alpha('#000', .1),
+        marginTop: 2,
+        '&.EYC': {
+            backgroundColor: alpha(theme.palette.warning.main, .2),
+        }
+    }
 }));
 
 const GotchiSkillpointsStyles = makeStyles( theme => ({

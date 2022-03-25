@@ -30,6 +30,7 @@ export default function Aavegotchi({ item }) {
                                     'name',
                                     'mainTraits',
                                     'numericTraits',
+                                    'traitsMapping',
                                     'wearablesLine',
                                     'listing',
                                 ]}
@@ -56,6 +57,7 @@ export default function Aavegotchi({ item }) {
                                     'name',
                                     'mainTraits',
                                     'numericTraits',
+                                    'traitsMapping',
                                     'wearablesLine',
                                     'listing',
                                 ]}

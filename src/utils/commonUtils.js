@@ -69,4 +69,8 @@ export default {
     checkArrayForDuplicates(array) {
         return new Set(array).size !== array.length;
     },
+
+    inRange(x, min, max) {
+        return x >= min && x <= max;
+    }
 }

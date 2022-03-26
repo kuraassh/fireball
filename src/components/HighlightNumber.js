@@ -37,9 +37,9 @@ export default function HighlightNumber({ children, type }) {
         <div
             className={classes.box}
             style={{
-                backgroundColor: getColor(type) === 'transparent' ? 'transparent' : alpha(getColor(type), .8),
+                backgroundColor: getColor(type) === 'transparent' ? 'transparent' : type === 'uncommon' ?  alpha(getColor(type), .3) : alpha(getColor(type), .8),
                 borderColor: getColor(type) === 'transparent' ? 'transparent' : alpha(theme.palette.secondary.dark, .5),
-                color: getColor(type) === 'transparent' ? theme.palette.text.primary : theme.palette.secondary.main
+                color: getColor(type) === 'transparent' ? theme.palette.text.primary : type === 'uncommon' ? alpha(theme.palette.text.primary, .8) : theme.palette.secondary.main
             }}
         >
             {children}

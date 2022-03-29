@@ -4,6 +4,7 @@ const api = 'https://dev.fireball.gg/api';
 
 export default {
     async getFireGotchiById(id) {
-        return await axios.get(`${api}/ghosts/?id=${id * 100}`).then(r => r.data.results[0]);
+        return await axios.get(`${api}/ghosts/?id=${id}`)
+            .then(r => r.data.results[0]);
     }
 }

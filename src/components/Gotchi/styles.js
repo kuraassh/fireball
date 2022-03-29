@@ -476,6 +476,10 @@ const CustomTooltipStyles = makeStyles( theme => ({
             color: theme.palette.primary.main
         }
     },
+    link: {
+        color: theme.palette.primary.main,
+        fontWeight: 600
+    },
 }));
 
 export {

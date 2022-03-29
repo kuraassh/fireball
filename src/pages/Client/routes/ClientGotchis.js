@@ -122,6 +122,7 @@ export default function ClientGotchis() {
                                             'collateral'
                                         ]
                                     },
+                                    'appearance',
                                     'svg',
                                     'name',
                                     'mainTraits',

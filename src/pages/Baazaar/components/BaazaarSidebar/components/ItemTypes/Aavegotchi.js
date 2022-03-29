@@ -26,6 +26,7 @@ export default function Aavegotchi({ item }) {
                                             'collateral'
                                         ]
                                     },
+                                    'appearance',
                                     'svg',
                                     'name',
                                     'mainTraits',
@@ -53,6 +54,7 @@ export default function Aavegotchi({ item }) {
                                             'collateral'
                                         ]
                                     },
+                                    'appearance',
                                     'svg',
                                     'name',
                                     'mainTraits',

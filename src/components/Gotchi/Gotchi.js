@@ -20,6 +20,7 @@ import GotchiListing from './GotchiListing';
 import GotchiSvg from './GotchiSvg';
 import GotchiSvgByStats from './GotchiSvgByStats';
 import styles, { CustomTooltipStyles } from './styles';
+import GotchiAppearance from './GotchiAppearance';
 
 export default function Gotchi({ gotchi, title, narrowed, renderSvgByStats, render, portal }) {
     const classes = {
@@ -176,6 +177,14 @@ export default function Gotchi({ gotchi, title, narrowed, renderSvgByStats, rend
                     listing={gotchi.listings}
                     history={gotchi.historicalPrices}
                     key={`${gotchi.id}-listings`}
+                />
+            )
+        },
+        get appearance() {
+            return (
+                <GotchiAppearance
+                    id={gotchi.id}
+                    key={`${gotchi.id}-appearance`}
                 />
             )
         },

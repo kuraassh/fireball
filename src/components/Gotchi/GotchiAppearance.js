@@ -74,7 +74,7 @@ export default function GotchiAppearance({ id }) {
                     enterTouchDelay={0}
                     placement='top'
                 >
-                    <div style={{ color: data?.related?.length > 0 ? 'orange' : 'lightgreen' }}>1 + {data?.related?.length}</div>
+                    <div style={{ color: data?.related?.length > 0 ? 'orange' : 'lightgreen' }}>1 / {data?.related?.length}</div>
                 </Tooltip>
             ) : !dataLoading && !data ? (
                 <span style={{ color: 'red' }}>undefined</span>

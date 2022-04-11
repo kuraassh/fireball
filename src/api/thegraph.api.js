@@ -189,6 +189,10 @@ export default {
         return this.getJoinedData([...ids.map(id => gotchiByIdQuery(id))]);
     },
 
+    getGotchiById(id) {
+        return this.getData(gotchiByIdQuery(id));
+    },
+
     getGotchiQueries() {
         const maxPossibleSkips = 6; // TODO: 12000 limitation per haunt
         let queries = [];

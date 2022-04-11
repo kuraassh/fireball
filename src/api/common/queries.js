@@ -15,6 +15,8 @@ export const gotchiesQuery = (skip, orderDir, hauntId) => {
           baseRarityScore
           modifiedRarityScore
           withSetsRarityScore
+          stakedAmount
+          minimumStake
           kinship
           toNextLevel
           level
@@ -41,12 +43,38 @@ export const gotchiesQuery = (skip, orderDir, hauntId) => {
 
 export const gotchiByIdQuery = (id) => {
   return `{
-    aavegotchi(id: ${id}) {
-      id
-      name
-      numericTraits
-      equippedWearables
-    }
+        aavegotchi(id: ${id}) {
+            id
+            name
+            numericTraits
+            modifiedNumericTraits
+            withSetsNumericTraits
+            baseRarityScore
+            modifiedRarityScore
+            withSetsRarityScore
+            stakedAmount
+            minimumStake
+            kinship
+            toNextLevel
+            level
+            experience
+            equippedWearables
+            collateral
+            hauntId
+            createdAt
+            possibleSets
+            equippedSetID
+            equippedSetName
+            usedSkillPoints
+            listings(where:{cancelled: false, timePurchased: 0}) {
+                id
+                priceInWei
+            }
+            historicalPrices
+            owner {
+                id
+            }
+        }
   }`
 }
 

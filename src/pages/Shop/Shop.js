@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { CircularProgress, IconButton, TextField, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-import queryString from 'query-string'
+import queryString from 'query-string';
 
 import Consumable from 'components/Items/Consumable/Consumable';
 import Gotchi from 'components/Gotchi/Gotchi';

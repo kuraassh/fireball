@@ -13,6 +13,7 @@ import Footer from './root/Footer/Footer';
 import Main from './pages/Main/Main';
 import Baazaar from './pages/Baazaar/Baazaar';
 import Lend from 'pages/Lend/Lend';
+import GotchiPage from 'pages/Gotchi/GotchiPage';
 import GhostExplorer from './pages/GhostExplorer/GhostExplorer';
 import Guilds from './pages/Guilds/Guilds';
 import Client from './pages/Client/Client';
@@ -85,6 +86,7 @@ export default function App() {
                                     <Route path={`/client`} component={ Client } />
                                     <Route path={`/raffle-calculator`} component={ Raffle } />
                                     <Route path={`/shop`} component={ Shop } />
+                                    <Route path={`/gotchi/:gotchiId`} component={ GotchiPage } />
                                     <Route exact path={`/404`} component={ NotFound } />
                                     <Redirect from='*' to='/404' />
                                 </Switch>

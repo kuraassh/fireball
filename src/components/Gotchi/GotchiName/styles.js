@@ -12,6 +12,8 @@ const styles = makeStyles(theme => ({
         transition: 'all .2s ease-in-out',
         padding: 7,
         fontSize: 15,
+        textDecoration: 'none',
+        cursor: 'pointer',
         '&:hover': {
             textDecoration: 'none',
             backgroundColor: alpha(theme.palette.secondary.dark, .6),
